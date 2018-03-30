@@ -1,0 +1,16 @@
+<form #registerForm="ngForm" (ngSubmit)="register()">
+  <div>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="name">
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" name="email" [(ngModel)]="email">
+  </div>
+  <div>
+    <label>Password</label>
+    <input type="password" name="password" [(ngModel)]="password">
+  </div>
+  <button type="submit">Register</button>
+  <button type="reset">Reset</button>
+</form>
